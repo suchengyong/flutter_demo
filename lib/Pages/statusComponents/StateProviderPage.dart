@@ -48,10 +48,10 @@ class CounterProviderDemo extends StatefulWidget {
 class _CounterProviderDemoState extends State<CounterProviderDemo> {
   @override
   Widget build(BuildContext context) {
-    // 第一种方式获取数据监听变化更新页面
+    // 第一种方式获取数据监听变化更新页面，这种方式会重绘整个部件树
     final counterModel = context.watch<CounterModel>();
     final currentSwitcher = context.watch<SwitcherModel>();
-    // 第二种方式获取数据监听变化更新页面
+    // 第二种方式获取数据监听变化更新页面，这种方式会重绘整个部件树
     //final counterModel = Provider.of<CounterModel>(context, listen: false);
     return Column(
       children: <Widget>[
@@ -86,7 +86,7 @@ class childerProvider extends StatelessWidget {
   const childerProvider({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // 第二种方式获取数据监听变化更新页面
+    // 第二种方式获取数据监听变化更新页面，这种方式会重绘整个部件树，listen: false表明此处不监听
     final counterModel = Provider.of<CounterModel>(context, listen: false);
     return Column(
       children: [
@@ -99,7 +99,25 @@ class childerProvider extends StatelessWidget {
           },
         ),
         Text('${counterModel.value}'),
+        ChangeWidget(),
       ],
+    );
+  }
+}
+
+// 第三中方式Consumer 方式只会重新渲染子部件
+class ChangeWidget extends StatelessWidget {
+  const ChangeWidget({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Consumer<CounterModel>(
+        builder: (context, counter, child) => Text(
+          '${counter.value}',
+          style: TextStyle(color: Colors.red, fontSize: 20),
+        ),
+      ),
     );
   }
 }
