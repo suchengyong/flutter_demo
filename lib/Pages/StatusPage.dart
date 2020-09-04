@@ -17,6 +17,9 @@ class StatusPage extends StatefulWidget {
 class _StatusPageState extends State<StatusPage> {
   @override
   Widget build(BuildContext context) {
+    // 获取设备屏幕的宽高
+    var size = MediaQuery.of(context).size;
+    print(size);
     return Scaffold(
       appBar: AppBar(
         title: Text('状态管理页面'),
