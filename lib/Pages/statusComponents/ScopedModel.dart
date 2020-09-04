@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
+// 数据
+class CounterModel extends Model {
+  int _count = 10;
+  int get count => _count;
+  void increaseCount() {
+    _count += 2;
+    notifyListeners(); // 监听变化
+  }
+}
+
 class ScopedModelPage extends StatefulWidget {
   ScopedModelPage({Key key}) : super(key: key);
 
@@ -42,7 +52,12 @@ class CounterScopedModel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CounterDemoModel(),
+      child: Column(
+        children: [
+          CounterDemoModel(),
+          CountModelDemo(),
+        ],
+      ),
     );
   }
 }
@@ -65,12 +80,26 @@ class CounterDemoModel extends StatelessWidget {
   }
 }
 
-// 数据model
-class CounterModel extends Model {
-  int _count = 10;
-  int get count => _count;
-  void increaseCount() {
-    _count += 2;
-    notifyListeners(); // 监听变化
+// 孙子子组件
+class CountModelDemo extends StatelessWidget {
+  const CountModelDemo({Key key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    // 这种方式数据改变了不会更新页面数据,适合只操作数据不需要更新当前部件使用,添加rebuildOnChange: true表示更新当前部件
+    final countModel =
+        ScopedModel.of<CounterModel>(context, rebuildOnChange: true);
+    return Column(
+      children: [
+        //Text('${countModel.count}'),
+        RaisedButton(
+          child: Text('数据更新'),
+          color: Theme.of(context).accentColor, //使用主题颜色
+          textTheme: ButtonTextTheme.primary, //
+          onPressed: () {
+            countModel.increaseCount();
+          },
+        ),
+      ],
+    );
   }
 }
