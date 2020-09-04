@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../Pages/HomePage.dart';
 import '../Pages/ComponentsPage.dart';
 import '../Pages/StatusPage.dart';
-import '../Pages/MyPage.dart';
+import '../Pages/AnimationPage.dart';
 
 class TabBarCenterButton extends StatefulWidget {
   final index;
@@ -18,7 +18,12 @@ class _TabBarCenterButtonState extends State<TabBarCenterButton> {
   _TabBarCenterButtonState(index) {
     this._currentIndex = index;
   }
-  List _pageList = [HomePage(), ComponentsPage(), StatusPage(), MyPage()];
+  List _pageList = [
+    HomePage(),
+    ComponentsPage(),
+    StatusPage(),
+    AnimationPage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(

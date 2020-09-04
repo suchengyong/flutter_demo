@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/Pages/statusComponents/Bloc_Page.dart';
 import 'package:flutter_demo/Pages/statusComponents/ParentsStateChild.dart';
 import 'package:flutter_demo/Pages/statusComponents/RxDartPage.dart';
 import 'package:flutter_demo/Pages/statusComponents/ScopedModel.dart';
@@ -70,6 +71,16 @@ class _StatusPageState extends State<StatusPage> {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => RxDartPage()),
+              );
+            },
+          ),
+          RaisedButton(
+            child: Text('Bloc状态管理库使用'),
+            color: Theme.of(context).accentColor, //使用主题颜色
+            textTheme: ButtonTextTheme.primary, //
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => BlocPage()),
               );
             },
           ),

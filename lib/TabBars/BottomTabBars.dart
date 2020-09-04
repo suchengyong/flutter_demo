@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../Pages/HomePage.dart';
 import '../Pages/ComponentsPage.dart';
 import '../Pages/StatusPage.dart';
-import '../Pages/MyPage.dart';
+import '../Pages/AnimationPage.dart';
 
 class BottomTabBars extends StatefulWidget {
   final index;
@@ -17,7 +17,12 @@ class _BottomTabBarsState extends State<BottomTabBars> {
   _BottomTabBarsState(index) {
     this._currentIndex = index;
   }
-  List _pageList = [HomePage(), ComponentsPage(), StatusPage(), MyPage()];
+  List _pageList = [
+    HomePage(),
+    ComponentsPage(),
+    StatusPage(),
+    AnimationPage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +45,7 @@ class _BottomTabBarsState extends State<BottomTabBars> {
                 icon: Icon(Icons.account_box), title: Text('组件')),
             BottomNavigationBarItem(
                 icon: Icon(Icons.category), title: Text('状态')),
-            BottomNavigationBarItem(icon: Icon(Icons.info), title: Text('我的'))
+            BottomNavigationBarItem(icon: Icon(Icons.info), title: Text('动画'))
           ],
         ),
       ),

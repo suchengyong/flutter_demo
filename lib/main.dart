@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      locale: Locale('en', 'CN'), // app 使用的语言
       debugShowCheckedModeBanner: false, //去掉dug显示
       title: 'flutter标题',
       theme: ThemeData(
@@ -28,7 +29,9 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: [
         S.delegate, // 配置easyrefresh插件中文化配置
         GlobalCupertinoLocalizations.delegate,
+        // 提供Material本地化组件
         GlobalMaterialLocalizations.delegate,
+        // 定义组件文字的方向
         GlobalWidgetsLocalizations.delegate,
         //使用iOS风格弹出框 时需要添加 下面这个CupertinoAlertDialog
         //const FallbackCupertinoLocalisationsDelegate(),
@@ -36,10 +39,8 @@ class MyApp extends StatelessWidget {
         CupertinoLocalizationsDelegate(),
       ],
       supportedLocales: [
-        //此处
-        //const Locale('en','US'), //注释掉才能使得中文有效
-        const Locale('zh', 'CN'),
-        //const Locale('zh', 'CH'),
+        //Locale('en', 'US'),
+        Locale('zh', 'CN'),
       ],
     );
   }
