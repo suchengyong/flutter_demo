@@ -4,6 +4,7 @@ class SwitcherModel with ChangeNotifier {
   bool _status = false;
 
   void changeStatus(value) {
+    print(value);
     _status = value;
     notifyListeners();
   }

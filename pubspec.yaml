@@ -20,6 +20,7 @@ dependencies:
   scoped_model: ^1.0.1 # 状态管理库
   rxdart: ^0.24.1 # 状态管理库 不太好用
   provide: ^1.0.2 # 状态管理库 官方推荐的
+  provider: ^4.3.2+1 # 状态管理库
   image_picker: ^0.6.7+7 # 图片选择器
   video_player: ^0.10.12+2 # 视频播放器
   camera: ^0.5.8+5 # 照相机

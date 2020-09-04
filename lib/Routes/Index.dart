@@ -120,7 +120,7 @@ final routes = {
   '/PostShowPage': (context, {arguments}) => PostShowPage(arguments: arguments),
   '/FontPage': (context) => FontPage(), // 自定义字体
   '/IconsPage': (context) => IconsPage(), // 自定义阿里图标
-  '/': (context) => BottomTabBars(index: 3), // tab底部导航
+  '/': (context) => BottomTabBars(index: 2), // tab底部导航
   //'/': (context) => TabBarCenterButton(), // tab底部导航中间部分突出一个半圆导航
 };
 

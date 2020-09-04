@@ -5,6 +5,7 @@ import 'package:flutter_demo/Pages/statusComponents/RxDartPage.dart';
 import 'package:flutter_demo/Pages/statusComponents/ScopedModel.dart';
 import 'package:flutter_demo/Pages/statusComponents/StateInheritedWidget.dart';
 import 'package:flutter_demo/Pages/statusComponents/StateProvide.dart';
+import 'package:flutter_demo/Pages/statusComponents/StateProviderPage.dart';
 import 'package:flutter_demo/Pages/statusComponents/StreamSatePage.dart';
 
 class StatusPage extends StatefulWidget {
@@ -94,6 +95,16 @@ class _StatusPageState extends State<StatusPage> {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => StateProvidePage()),
+              );
+            },
+          ),
+          RaisedButton(
+            child: Text('provider状态管理库使用'),
+            color: Theme.of(context).accentColor, //使用主题颜色
+            textTheme: ButtonTextTheme.primary, //
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => StateProviderPage()),
               );
             },
           ),
