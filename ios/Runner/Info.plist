@@ -10,8 +10,13 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>zh_CN</string>
+	</array>
 	<key>CFBundleName</key>
-	<string>flutter_demo</string>
+	<string>男神专用</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -22,6 +27,17 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>请允许访问您的照相机</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>请允许访问您的麦克风</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>请允许访问您的照片库</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,25 +57,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<!-- 配置image_picker支持的权限 -->
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>请允许访问您的照片库</string>
-	<!-- 配置camera支持的权限 -->
-	<key>NSCameraUsageDescription</key>
-	<string>请允许访问您的照相机</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>请允许访问您的麦克风</string>
-	<!-- 配置video_player支持的权限 -->
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<!-- 配置支持的语言 -->
-	<key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
-		<string>zh_CN</string>
-	</array>
 </dict>
 </plist>
