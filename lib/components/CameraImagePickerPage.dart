@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'CameraPage.dart';
 import 'ImagePickerPage.dart';
 
 class CameraImagePickerPage extends StatelessWidget {
@@ -16,14 +14,6 @@ class CameraImagePickerPage extends StatelessWidget {
         child: new Wrap(
           spacing: 10,
           children: <Widget>[
-            new GestureDetector(
-              child: new Chip(label: new Text("照相机")),
-              onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(builder: (_) {
-                  return CameraPage();
-                }));
-              },
-            ),
             new GestureDetector(
               child: new Chip(label: new Text("选择图片")),
               onTap: () {

@@ -3,15 +3,57 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_localizations/flutter_localizations.dart'; // 配置国际化
 import 'package:flutter_demo/pulgs/Delegate.dart'; //iOS 输入框全选择 复制 粘贴等
 import 'package:flutter_demo/pulgs/i18n.dart'; // easyrefresh插件中文化配置
+import 'Pages/push/JPushProvider.dart';
 import 'Routes/Index.dart';
+import 'package:flutter_jpush/flutter_jpush.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  MyApp({Key key}) : super(key: key);
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    _initJPush();
+  }
+
+// 极光推送开始
+  void _initJPush() async {
+    await FlutterJPush.startup();
+    print("初始化jpush成功");
+
+    // 获取 registrationID
+    var registrationID = await FlutterJPush.getRegistrationID();
+    print(registrationID);
+
+    // 注册接收和打开 Notification()
+    _initNotification();
+  }
+
+  void _initNotification() async {
+    FlutterJPush.addReceiveNotificationListener(
+        (JPushNotification notification) {
+      print("收到推送提醒: $notification");
+    });
+
+    FlutterJPush.addReceiveOpenNotificationListener(
+        (JPushNotification notification) {
+      print("打开了推送提醒: $notification");
+    });
+  }
+
+// 极光推送结束
   @override
   Widget build(BuildContext context) {
+    JPushProvider();
     return new MaterialApp(
       locale: Locale('en', 'CN'), // app 使用的语言
       debugShowCheckedModeBanner: false, //去掉dug显示
