@@ -47,6 +47,11 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         // 配置极光推送功能
+        ndk {
+            /*选择要添加的对应 cpu 类型的 .so 库。*/
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'x86_64', 'mips', 'mips64'// 'arm64-v8a',
+            /*还可以添加*/
+        }
         manifestPlaceholders = [
             JPUSH_PKGNAME : applicationId,
             JPUSH_APPKEY : "c3873e6ed9d10985b4a542c8", //JPush 上注册的包名对应的 Appkey 你的 Appkey.
