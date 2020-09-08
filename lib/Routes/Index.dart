@@ -58,9 +58,11 @@ import '../components/ButtonPage.dart';
 import '../components/ScreenPage.dart';
 import '../components/ArgumentsFulPage.dart';
 import '../components/ArgumentsLessPage.dart';
+import '../components/DouyinMainPage.dart';
 
 //配置路由
 final routes = {
+  '/DouyinMainPage': (context) => DouyinMainPage(),
   '/ArgumentsLessPage': (context, {arguments}) =>
       ArgumentsLessPage(arguments: arguments), // 无状态组件的传第参数
   '/ArgumentsFulPage': (context, {arguments}) =>
@@ -120,7 +122,7 @@ final routes = {
   '/PostShowPage': (context, {arguments}) => PostShowPage(arguments: arguments),
   '/FontPage': (context) => FontPage(), // 自定义字体
   '/IconsPage': (context) => IconsPage(), // 自定义阿里图标
-  '/': (context) => BottomTabBars(index: 2), // tab底部导航
+  '/': (context) => BottomTabBars(index: 0), // tab底部导航
   //'/': (context) => TabBarCenterButton(), // tab底部导航中间部分突出一个半圆导航
 };
 

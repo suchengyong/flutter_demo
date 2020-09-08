@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'animation/LoginBackgroundAnimationPage.dart';
 import 'animation/animation_demo.dart';
 import 'animation/animation_heart_demo.dart';
 
@@ -20,6 +21,20 @@ class _AnimationPageState extends State<AnimationPage> {
       ),
       body: ListView(
         children: [
+          RaisedButton(
+            child: Text(
+              '登录页面背景动画效果',
+              textAlign: TextAlign.center,
+            ),
+            color: Theme.of(context).accentColor, //使用主题颜色
+            textTheme: ButtonTextTheme.primary, //
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                    builder: (context) => LoginBackgroundAnimationPage()),
+              );
+            },
+          ),
           RaisedButton(
             child: Text(
               '心跳动动画',
