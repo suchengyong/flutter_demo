@@ -59,9 +59,11 @@ import '../components/ScreenPage.dart';
 import '../components/ArgumentsFulPage.dart';
 import '../components/ArgumentsLessPage.dart';
 import '../components/DouyinMainPage.dart';
+import '../components/CameraPage.dart';
 
 //配置路由
 final routes = {
+  '/CameraPage': (context) => CameraPage(),
   '/DouyinMainPage': (context) => DouyinMainPage(),
   '/ArgumentsLessPage': (context, {arguments}) =>
       ArgumentsLessPage(arguments: arguments), // 无状态组件的传第参数

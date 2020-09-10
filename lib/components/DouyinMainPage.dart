@@ -42,7 +42,7 @@ class DouyinHomePage extends StatelessWidget {
             scrollDirection: Axis.vertical,
             onPageChanged: (currentPage) => debugPrint('Page: $currentPage'),
             controller: PageController(
-              initialPage: 1,
+              initialPage: 0,
               keepPage: true,
               viewportFraction: 1,
             ),
@@ -54,7 +54,7 @@ class DouyinHomePage extends StatelessWidget {
                     child: Center(
                       child: VideoPlay(),
                     ),
-                    // Image.asset(
+                    // child: Image.asset(
                     //   'assets/images/chaonan2.jpg',
                     //   fit: BoxFit.cover,
                     // ),

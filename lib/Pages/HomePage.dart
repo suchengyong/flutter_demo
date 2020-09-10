@@ -22,6 +22,17 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '抖音摄像拍照实现效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CameraPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '抖音首页实现效果',
                   textAlign: TextAlign.center,
                 ),
