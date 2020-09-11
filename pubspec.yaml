@@ -34,6 +34,8 @@ dependencies:
   flutter_cupertino_date_picker: ^1.0.26+2 # 日期和时间选择库
   marquee: ^1.6.0 # 跑马灯公告
   flutter_jpush: ^0.0.4 # 极光推送
+  shared_preferences: ^0.5.10 # 数据存储
+  after_layout: ^1.0.7+2 #
 
   
 dev_dependencies:

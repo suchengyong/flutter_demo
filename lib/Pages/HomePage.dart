@@ -22,6 +22,39 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  'flutter数据存储和获取',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SharedPreferencesPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '滚动渐变拉伸背景效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SliverAppBarPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '抖音我的页面滚动渐变效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/DouyinMyPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '抖音摄像拍照实现效果',
                   textAlign: TextAlign.center,
                 ),

@@ -60,9 +60,15 @@ import '../components/ArgumentsFulPage.dart';
 import '../components/ArgumentsLessPage.dart';
 import '../components/DouyinMainPage.dart';
 import '../components/CameraPage.dart';
+import '../components/SharedPreferencesPage.dart';
+import '../components/DouyinMyPage.dart';
+import '../components/SliverAppBarPage.dart';
 
 //配置路由
 final routes = {
+  '/SliverAppBarPage': (context) => SliverAppBarPage(),
+  '/DouyinMyPage': (context) => DouyinMyPage(),
+  '/SharedPreferencesPage': (context) => SharedPreferencesPage(),
   '/CameraPage': (context) => CameraPage(),
   '/DouyinMainPage': (context) => DouyinMainPage(),
   '/ArgumentsLessPage': (context, {arguments}) =>

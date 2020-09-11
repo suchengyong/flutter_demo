@@ -3,9 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_localizations/flutter_localizations.dart'; // 配置国际化
 import 'package:flutter_demo/pulgs/Delegate.dart'; //iOS 输入框全选择 复制 粘贴等
 import 'package:flutter_demo/pulgs/i18n.dart'; // easyrefresh插件中文化配置
-import 'Pages/push/JPushProvider.dart';
 import 'Routes/Index.dart';
-import 'package:flutter_jpush/flutter_jpush.dart';
+import 'package:flutter_jpush/flutter_jpush.dart'; // 极光推送
 
 void main() {
   runApp(MyApp());
@@ -53,7 +52,6 @@ class _MyAppState extends State<MyApp> {
 // 极光推送结束
   @override
   Widget build(BuildContext context) {
-    JPushProvider();
     return new MaterialApp(
       locale: Locale('en', 'CN'), // app 使用的语言
       debugShowCheckedModeBanner: false, //去掉dug显示
