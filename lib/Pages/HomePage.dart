@@ -22,6 +22,215 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '制作刮刮卡效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ScratcherDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '仿iPhone锁屏界面',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/PassCodeScreenDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '水波效果的进度器',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LiquidProgressIndicatorDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '液体效果的页面切换组件',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LiquidSwipeDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可翻转的卡片组件',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlipCardDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可自定义的评分组件',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlutterRatingBarDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  'flutter将widget裁剪成各种自定义形状',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlutterCustomClippersDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可展开选项的浮动按钮',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlutterSpeedDialDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '文字动效组件',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AnimatedTextKitPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '拖动排序元素',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/DragListPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可定制的上下滑出抽屉',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SlidingUpPanelPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '超酷动画的底部tab栏',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CurvedNavigationBarPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '圆形和线形的进度条',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/PercentIndicatorPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '真正意义上的Toast,目前配置还不能使用',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/BotToastDemoPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可滑动列表按钮选项，内置定向滑动删除动作',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SlidablePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可定制的图片预览查看器',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/PhotoViewPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '点赞按钮动画',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LikeButtonAnimationPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '列表动画效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/StaggeredAnimationsPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '滚动粘贴头部效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/StickyHeadersPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   'flutter数据存储和获取',
                   textAlign: TextAlign.center,
                 ),

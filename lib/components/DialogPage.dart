@@ -6,6 +6,7 @@ import 'Dailog/Loading.dart';
 import 'Dailog/ShowAlertDialog.dart';
 import 'Dailog/ShowCupertinoDialog.dart';
 import 'Dailog/ShowModalBottomSheet.dart';
+import 'package:bot_toast/bot_toast.dart';
 
 class DialogPage extends StatefulWidget {
   DialogPage({Key key}) : super(key: key);

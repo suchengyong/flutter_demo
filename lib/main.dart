@@ -1,3 +1,4 @@
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_localizations/flutter_localizations.dart'; // 配置国际化
@@ -82,6 +83,8 @@ class _MyAppState extends State<MyApp> {
         //Locale('en', 'US'),
         Locale('zh', 'CN'),
       ],
+      // bot_toast 提示框配置
+      navigatorObservers: [BotToastNavigatorObserver()],
     );
   }
 }

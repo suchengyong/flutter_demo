@@ -63,9 +63,47 @@ import '../components/CameraPage.dart';
 import '../components/SharedPreferencesPage.dart';
 import '../components/DouyinMyPage.dart';
 import '../components/SliverAppBarPage.dart';
+import '../components/StickyHeadersPage.dart';
+import '../components/StaggeredAnimationsPage.dart';
+import '../components/LikeButtonAnimationPage.dart';
+import '../components/PhotoViewPage.dart';
+import '../components/SlidablePage.dart';
+import '../components/BotToastDemoPage.dart';
+import '../components/PercentIndicatorPage.dart';
+import '../components/CurvedNavigationBarPage.dart';
+import '../components/SlidingUpPanelPage.dart';
+import '../components/DragListPage.dart';
+import '../components/AnimatedTextKitPage.dart';
+import '../components/FlutterSpeedDialDemo.dart';
+import '../components/FlutterCustomClippersDemo.dart';
+import '../components/FlutterRatingBarDemo.dart';
+import '../components/FlipCardDemo.dart';
+import '../components/LiquidSwipeDemo.dart';
+import '../components/LiquidProgressIndicatorDemo.dart';
+import '../components/PassCodeScreenDemo.dart';
+import '../components/ScratcherDemo.dart';
 
 //配置路由
 final routes = {
+  '/ScratcherDemo': (context) => ScratcherDemo(),
+  '/PassCodeScreenDemo': (context) => PassCodeScreenDemo(),
+  '/LiquidProgressIndicatorDemo': (context) => LiquidProgressIndicatorDemo(),
+  '/LiquidSwipeDemo': (context) => LiquidSwipeDemo(),
+  '/FlipCardDemo': (context) => FlipCardDemo(),
+  '/FlutterRatingBarDemo': (context) => FlutterRatingBarDemo(),
+  '/FlutterCustomClippersDemo': (context) => FlutterCustomClippersDemo(),
+  '/FlutterSpeedDialDemo': (context) => FlutterSpeedDialDemo(),
+  '/AnimatedTextKitPage': (context) => AnimatedTextKitPage(),
+  '/DragListPage': (context) => DragListPage(),
+  '/SlidingUpPanelPage': (context) => SlidingUpPanelPage(),
+  '/CurvedNavigationBarPage': (context) => CurvedNavigationBarPage(),
+  '/PercentIndicatorPage': (context) => PercentIndicatorPage(),
+  '/BotToastDemoPage': (context) => BotToastDemoPage(),
+  '/SlidablePage': (context) => SlidablePage(),
+  '/PhotoViewPage': (context) => PhotoViewPage(),
+  '/LikeButtonAnimationPage': (context) => LikeButtonAnimationPage(),
+  '/StaggeredAnimationsPage': (context) => StaggeredAnimationsPage(),
+  '/StickyHeadersPage': (context) => StickyHeadersPage(),
   '/SliverAppBarPage': (context) => SliverAppBarPage(),
   '/DouyinMyPage': (context) => DouyinMyPage(),
   '/SharedPreferencesPage': (context) => SharedPreferencesPage(),

@@ -35,13 +35,33 @@ dependencies:
   marquee: ^1.6.0 # 跑马灯公告
   flutter_jpush: ^0.0.4 # 极光推送
   shared_preferences: ^0.5.10 # 数据存储
-  after_layout: ^1.0.7+2 #
+  after_layout: ^1.0.7+2 # 显示第一帧之后提供执行方法 afterFirstLayout
+  sticky_headers: "^0.1.8" # 滚动连贴头部效果
+  flutter_staggered_animations: "^0.1.2" # 列表动画 https://xbzweb.com/
+  like_button: ^0.1.9 # 点赞按钮动画 https://xbzweb.com/
+  photo_view: ^0.7.0 # 可定制的图片预览查看器 https://xbzweb.com/
+  flutter_slidable: ^0.5.4 #可滑动列表按钮选项，内置定向滑动删除动作 https://xbzweb.com/
+  bot_toast: ^3.0.4  # 提示弹出框 真正意义上的Toast https://xbzweb.com/2019/10/31/flutter%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AE%E5%AD%90%E6%8E%A8%E8%8D%90%E5%85%AD-%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%85%A8%E5%B1%80toast/#%E8%BD%AE%E5%AD%90
+  percent_indicator: ^2.1.6 # 圆形和线形的进度条 https://xbzweb.com/2019/11/04/flutter%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AE%E5%AD%90%E6%8E%A8%E8%8D%90%E4%B8%83-flutter%E5%9C%86%E5%BD%A2%E6%88%96%E7%BA%BF%E5%9E%8B%E8%BF%9B%E5%BA%A6%E6%9D%A1/#%E5%89%8D%E8%A8%80
+  curved_navigation_bar: ^0.3.4 # 超酷动画的底部tab栏 https://xbzweb.com/2019/11/04/flutter%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AE%E5%AD%90%E6%8E%A8%E8%8D%90%E5%85%AB-flutter%E4%B8%80%E4%B8%AA%E8%B6%85%E9%85%B7%E5%8A%A8%E7%94%BB%E7%9A%84%E5%BA%95%E9%83%A8tab%E6%A0%8F/#%E8%BD%AE%E5%AD%90
+  sliding_up_panel: ^1.0.1  # 可定制的上下滑出抽屉  https://xbzweb.com
+  drag_list: ^1.0.8 # 拖动排序 https://xbzweb.com
+  animated_text_kit: ^2.2.0 # 文字动效组件 https://xbzweb.com
+  flutter_speed_dial: ^1.2.5 # 可展开选项的浮动按钮 https://xbzweb.com
+  flutter_custom_clippers: ^1.1.2 # flutter将widget裁剪成各种自定义形状. https://xbzweb.com
+  flutter_rating_bar: ^3.0.1+1 # 可自定义的评分组件
+  flip_card: ^0.4.4 # 可翻转的卡片组件
+  liquid_swipe: ^1.5.0 # 液体效果的页面切换组件
+  liquid_progress_indicator: ^0.3.2 # 水波效果的进度器
+  passcode_screen: ^1.2.0 # 仿iPhone锁屏界面
+  scratcher: ^1.4.0 # 制作刮刮卡效果
 
-  
+
+
+# 开发包
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
 
 flutter:
   uses-material-design: true
