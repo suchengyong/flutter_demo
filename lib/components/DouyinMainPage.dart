@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'ReplyFullList.dart';
+import 'providers/RecommendProvider.dart';
 import 'widgets/MarqueeWidget.dart';
 import 'package:video_player/video_player.dart';
 
@@ -12,8 +15,13 @@ class DouyinMainPage extends StatefulWidget {
 class _DouyinMainPageState extends State<DouyinMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: DouyinHomePage(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => RecommendProvider()),
+      ],
+      child: Scaffold(
+        body: DouyinHomePage(),
+      ),
     );
   }
 }
@@ -51,13 +59,13 @@ class DouyinHomePage extends StatelessWidget {
               return Stack(
                 children: [
                   SizedBox.expand(
-                    child: Center(
-                      child: VideoPlay(),
-                    ),
-                    // child: Image.asset(
-                    //   'assets/images/chaonan2.jpg',
-                    //   fit: BoxFit.cover,
+                    // child: Center(
+                    //   child: VideoPlay(),
                     // ),
+                    child: Image.asset(
+                      'assets/images/chaonan2.jpg',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   Positioned(
                     bottom: 80,
@@ -125,12 +133,17 @@ class DouyinHomePage extends StatelessWidget {
                             ),
                           ),
                           SizedBox(height: 5),
-                          IconText(
-                            text: '99w',
-                            icon: Icon(
-                              Icons.comment,
-                              size: 40,
-                              color: Colors.white,
+                          InkWell(
+                            onTap: () {
+                              showBottom(context);
+                            },
+                            child: IconText(
+                              text: '99w',
+                              icon: Icon(
+                                Icons.comment,
+                                size: 40,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           SizedBox(height: 5),
@@ -492,7 +505,7 @@ class _RotateAlbumState extends State<RotateAlbum>
   }
 }
 
-// 右边按钮组
+// 右边按钮组第一个头像
 Widget addUser() {
   return Column(
     children: [
@@ -555,4 +568,30 @@ class IconText extends StatelessWidget {
       ),
     );
   }
+}
+
+// 评论弹出框列表
+showBottom(context) {
+  RecommendProvider provider =
+      Provider.of<RecommendProvider>(context, listen: false);
+  double height = MediaQuery.of(context).size.height;
+  provider.setScreenHeight(height);
+  provider.hideBottomBar();
+  showModalBottomSheet(
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadiusDirectional.circular(10),
+    ),
+    context: context,
+    builder: (_) {
+      return Container(
+        height: 600,
+        child: GestureDetector(
+          onTap: () {
+            FocusScope.of(context).requestFocus(FocusNode());
+          },
+          child: ReplyFullList(pCtx: context),
+        ),
+      );
+    },
+  );
 }

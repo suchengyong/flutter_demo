@@ -12,6 +12,7 @@ import '../components/TopTabsPage.dart';
 import '../components/CameraImagePickerPage.dart';
 import '../components/GalleryPage.dart';
 import '../components/CutScreenPage.dart';
+import '../components/WidgetToImageDemo.dart';
 import '../components/AdsorptionViewPage.dart';
 import '../components/DragAbleGridViewPage.dart';
 import '../components/PullAndPushPage.dart';
@@ -82,9 +83,34 @@ import '../components/LiquidSwipeDemo.dart';
 import '../components/LiquidProgressIndicatorDemo.dart';
 import '../components/PassCodeScreenDemo.dart';
 import '../components/ScratcherDemo.dart';
+import '../components/DraggablePage.dart';
+import '../components/KeepAliveDemo.dart';
+import '../components/SearchBarDemo.dart';
+import '../components/WarpDemoPage.dart';
+import '../components/FormPopDemoPage.dart';
+import '../components/WillPopScpoeDemo.dart';
+import '../components/SplashScreenPage.dart';
+import '../components/RightBackDemoPage.dart';
+import '../components/OverlayDemo.dart';
+import '../components/OverlayDemo1.dart';
+import '../components/OverlayDemo2.dart';
+import '../components/UrlLauncherPage.dart';
 
 //配置路由
 final routes = {
+  '/UrlLauncherPage': (context) => UrlLauncherPage(),
+  '/OverlayDemo2': (context) => OverlayDemo2(),
+  '/OverlayDemo1': (context) => OverlayDemo1(),
+  '/OverlayDemo': (context) => OverlayDemo(),
+  '/RightBackDemoPage': (context) => RightBackDemoPage(),
+  '/SplashScreenPage': (context, {arguments}) =>
+      SplashScreenPage(arguments: arguments),
+  '/WillPopScpoeDemo': (context) => WillPopScpoeDemo(),
+  '/FormPopDemoPage': (context) => FormPopDemoPage(),
+  '/WarpDemoPage': (context) => WarpDemoPage(),
+  '/SearchBarDemo': (context) => SearchBarDemo(),
+  '/KeepAliveDemo': (context) => KeepAliveDemo(),
+  '/DraggablePage': (context) => DraggablePage(),
   '/ScratcherDemo': (context) => ScratcherDemo(),
   '/PassCodeScreenDemo': (context) => PassCodeScreenDemo(),
   '/LiquidProgressIndicatorDemo': (context) => LiquidProgressIndicatorDemo(),
@@ -158,6 +184,7 @@ final routes = {
   '/DragAbleGridViewPage': (context) => DragAbleGridViewPage(),
   '/AdsorptionViewPage': (context) => AdsorptionViewPage(),
   '/CutScreenPage': (context) => CutScreenPage(),
+  '/WidgetToImageDemo': (context) => WidgetToImageDemo(),
   '/GalleryPage': (context) => GalleryPage(),
   '/CameraImagePickerPage': (context) => CameraImagePickerPage(),
   '/TopTabsPage': (context) => TopTabsPage(),

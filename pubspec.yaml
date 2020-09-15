@@ -55,8 +55,8 @@ dependencies:
   liquid_progress_indicator: ^0.3.2 # 水波效果的进度器
   passcode_screen: ^1.2.0 # 仿iPhone锁屏界面
   scratcher: ^1.4.0 # 制作刮刮卡效果
-
-
+  flutter_spinkit: "^4.1.2" # 一个很棒的等待动画库——Spinkit
+  url_launcher: ^5.5.3 # 使用url_launcher唤醒功能 :打开网页，打电话，发短信等功能
 
 # 开发包
 dev_dependencies:

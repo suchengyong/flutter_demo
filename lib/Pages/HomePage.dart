@@ -22,6 +22,142 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '使用url_launcher唤醒功能',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/UrlLauncherPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '在当前页面上覆盖新的组件overlay',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/OverlayDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '1.在当前页面上覆盖新的组件overlay',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/OverlayDemo1');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '2.在当前页面上覆盖新的组件overlay',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/OverlayDemo2');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '右滑返回上一页',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/RightBackDemoPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '应用开启进入闪屏页,然后跳转到首页',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    '/SplashScreenPage',
+                    arguments: {'flage': 1},
+                  );
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '普通返回上一页时弹出提示信息',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/WillPopScpoeDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '利用Form表单onWillPop返回上一页时弹出提示信息',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FormPopDemoPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '微信九宫格效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/WarpDemoPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '制作一个精美的Material风格搜索框',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SearchBarDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '在多个页面中切换，并保持原页面状态',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/KeepAliveDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '可拖动组件draggable',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/DraggablePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '制作刮刮卡效果',
                   textAlign: TextAlign.center,
                 ),
@@ -369,11 +505,19 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               RaisedButton(
-                child: Text('屏幕截图效果'),
+                child: Text('屏幕截屏效果'),
                 color: Theme.of(context).accentColor, //使用主题颜色
                 textTheme: ButtonTextTheme.primary, //
                 onPressed: () {
                   Navigator.pushNamed(context, '/CutScreenPage');
+                },
+              ),
+              RaisedButton(
+                child: Text('屏幕截屏效果实现方式'),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/WidgetToImageDemo');
                 },
               ),
               RaisedButton(

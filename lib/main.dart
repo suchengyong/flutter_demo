@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
         splashColor: Colors.white70, // 水波纹的颜色
         accentColor: Color.fromRGBO(3, 54, 255, 1.0), // 设置一种颜色
       ),
-      initialRoute: '/', //初始化路由
+      initialRoute: '/SplashScreenPage', //初始化路由 先进入闪屏页面然后跳转到主页
       onGenerateRoute: onGenerateRoute,
       //中文汉化配置
       localizationsDelegates: [
