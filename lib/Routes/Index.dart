@@ -95,9 +95,15 @@ import '../components/OverlayDemo.dart';
 import '../components/OverlayDemo1.dart';
 import '../components/OverlayDemo2.dart';
 import '../components/UrlLauncherPage.dart';
+import '../components/LoadImagePage.dart';
+import '../components/IntroSliderPage.dart';
+import '../components/IntroViewsPage.dart';
 
 //配置路由
 final routes = {
+  '/IntroViewsPage': (context) => IntroViewsPage(),
+  '/IntroSliderPage': (context) => IntroSliderPage(),
+  '/LoadImagePage': (context) => LoadImagePage(),
   '/UrlLauncherPage': (context) => UrlLauncherPage(),
   '/OverlayDemo2': (context) => OverlayDemo2(),
   '/OverlayDemo1': (context) => OverlayDemo1(),

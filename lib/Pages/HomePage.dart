@@ -22,6 +22,39 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '一个很棒的App启动介绍动画的库',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroViewsPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  'App启动时候应用介绍页',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroSliderPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '从本地相册选取多张图片',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LoadImagePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '使用url_launcher唤醒功能',
                   textAlign: TextAlign.center,
                 ),
