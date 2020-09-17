@@ -102,9 +102,11 @@ import '../components/SimplePhotoViewPage.dart';
 import '../components/GalleryPageDemo.dart';
 import '../components/ClippedPhotoViewPage.dart';
 import '../components/ControllerPhotoViewPage.dart';
+import '../components/CanvasPage.dart';
 
 //配置路由
 final routes = {
+  '/CanvasPage': (context) => CanvasPage(),
   '/ControllerPhotoViewPage': (context) => ControllerPhotoViewPage(),
   '/ClippedPhotoViewPage': (context) => ClippedPhotoViewPage(),
   '/GalleryPageDemo': (context) => GalleryPageDemo(),

@@ -22,6 +22,17 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  'Canvas的各种使用方式',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CanvasPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '控制器照片视图',
                   textAlign: TextAlign.center,
                 ),
