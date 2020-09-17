@@ -62,7 +62,7 @@ dependencies:
   intro_views_flutter: ^2.8.1 # 一个很棒的开场介绍动画的库
   # pinch_zoom_image: ^0.2.5 # 手指对图片放大缩小
   # cached_network_image: ^2.3.2+1 # 图片缓存
-
+  
 
 
 # 开发包

@@ -98,9 +98,17 @@ import '../components/UrlLauncherPage.dart';
 import '../components/LoadImagePage.dart';
 import '../components/IntroSliderPage.dart';
 import '../components/IntroViewsPage.dart';
+import '../components/SimplePhotoViewPage.dart';
+import '../components/GalleryPageDemo.dart';
+import '../components/ClippedPhotoViewPage.dart';
+import '../components/ControllerPhotoViewPage.dart';
 
 //配置路由
 final routes = {
+  '/ControllerPhotoViewPage': (context) => ControllerPhotoViewPage(),
+  '/ClippedPhotoViewPage': (context) => ClippedPhotoViewPage(),
+  '/GalleryPageDemo': (context) => GalleryPageDemo(),
+  '/SimplePhotoViewPage': (context) => SimplePhotoViewPage(),
   '/IntroViewsPage': (context) => IntroViewsPage(),
   '/IntroSliderPage': (context) => IntroSliderPage(),
   '/LoadImagePage': (context) => LoadImagePage(),

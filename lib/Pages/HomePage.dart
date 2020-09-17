@@ -22,6 +22,50 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '控制器照片视图',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ControllerPhotoViewPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '图片剪裁效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ClippedPhotoViewPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '多张图片预览效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/GalleryPageDemo');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '图片预览效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SimplePhotoViewPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '一个很棒的App启动介绍动画的库',
                   textAlign: TextAlign.center,
                 ),
