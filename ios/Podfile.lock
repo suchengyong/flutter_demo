@@ -1,4 +1,5 @@
 PODS:
+  - AlipaySDK-iOS (15.7.9)
   - BSGridCollectionViewLayout (1.2.5)
   - BSImagePicker (2.10.3):
     - BSGridCollectionViewLayout (= 1.2.5)
@@ -26,6 +27,9 @@ PODS:
   - shared_preferences (0.0.1):
     - Flutter
   - Toast (4.0.0)
+  - tobias (0.0.1):
+    - AlipaySDK-iOS (~> 15.7.9)
+    - Flutter
   - url_launcher (0.0.1):
     - Flutter
   - video_player (0.0.1):
@@ -40,11 +44,13 @@ DEPENDENCIES:
   - multi_image_picker (from `.symlinks/plugins/multi_image_picker/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - tobias (from `.symlinks/plugins/tobias/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
   - video_player (from `.symlinks/plugins/video_player/ios`)
 
 SPEC REPOS:
   trunk:
+    - AlipaySDK-iOS
     - BSGridCollectionViewLayout
     - BSImagePicker
     - BSImageView
@@ -69,12 +75,15 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
+  tobias:
+    :path: ".symlinks/plugins/tobias/ios"
   url_launcher:
     :path: ".symlinks/plugins/url_launcher/ios"
   video_player:
     :path: ".symlinks/plugins/video_player/ios"
 
 SPEC CHECKSUMS:
+  AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
   BSGridCollectionViewLayout: 333dcb457a5a3bdd9212607ab5756553dcfe06cb
   BSImagePicker: 07404254f2fcdaf5a2eb403c0f8c337267ce8738
   BSImageView: a149459433a2687157d034c78e059d30ac7f2544
@@ -89,6 +98,7 @@ SPEC CHECKSUMS:
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  tobias: 6872e2198dc30e17c10513b9ee114e28d099bc70
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
   video_player: 9cc823b1d9da7e8427ee591e8438bfbcde500e6e
 

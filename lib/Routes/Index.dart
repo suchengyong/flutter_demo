@@ -103,9 +103,15 @@ import '../components/GalleryPageDemo.dart';
 import '../components/ClippedPhotoViewPage.dart';
 import '../components/ControllerPhotoViewPage.dart';
 import '../components/CanvasPage.dart';
+import '../components/AlipayTobiasPage.dart';
+import '../components/TiktokApp/pages/root_app.dart';
+import '../components/FacebookApp/pages/home_page.dart';
 
 //配置路由
 final routes = {
+  '/FaceBookAppPage': (context) => FaceBookAppPage(),
+  '/RootApp': (context) => RootApp(),
+  '/AlipayTobiasPage': (context) => AlipayTobiasPage(),
   '/CanvasPage': (context) => CanvasPage(),
   '/ControllerPhotoViewPage': (context) => ControllerPhotoViewPage(),
   '/ClippedPhotoViewPage': (context) => ClippedPhotoViewPage(),

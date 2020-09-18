@@ -22,6 +22,39 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  'facebook脸书App首页实现',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FaceBookAppPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '抖音短视频App',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/RootApp');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '使用支付宝支付',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AlipayTobiasPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   'Canvas的各种使用方式',
                   textAlign: TextAlign.center,
                 ),

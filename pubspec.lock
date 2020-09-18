@@ -315,6 +315,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.1.9"
+  line_icons:
+    dependency: "direct main"
+    description:
+      name: line_icons
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.2.0"
   liquid_progress_indicator:
     dependency: "direct main"
     description:
@@ -593,6 +600,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.17"
+  tobias:
+    dependency: "direct main"
+    description:
+      name: tobias
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.7.1+1"
   transformer_page_view:
     dependency: transitive
     description:

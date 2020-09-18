@@ -60,6 +60,8 @@ dependencies:
   multi_image_picker: ^4.7.13 # 从本地相册选取多张图片 https://sh1d0w.github.io/multi_image_picker/#/gettingstarted
   intro_slider: ^2.3.3 # App启动时候应用介绍页——slider
   intro_views_flutter: ^2.8.1 # 一个很棒的开场介绍动画的库
+  tobias: ^1.7.1+1 # 支付宝支付 
+  line_icons: ^0.2.0 # 图标包
   # pinch_zoom_image: ^0.2.5 # 手指对图片放大缩小
   # cached_network_image: ^2.3.2+1 # 图片缓存
   
@@ -75,6 +77,8 @@ flutter:
   # 本地图片
   assets:
     - assets/images/
+    - assets/videos/
+    
   # 自定义字体
   fonts:
     - family: AlexBrush
@@ -88,6 +92,9 @@ flutter:
     - family: MaShanZheng
       fonts:
         - asset: assets/fonts/MaShanZheng-Regular.ttf
+    - family:  TikTokIcons
+      fonts:
+         - asset: assets/fonts/TikTokIcons.ttf
     # 下面是自定义阿里图标
     - family: Iconfont
       fonts:
