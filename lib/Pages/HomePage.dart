@@ -22,6 +22,259 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '启动页面预览效果8',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SmartWalletOnboardingPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '启动页面预览效果7',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LandingOnePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '启动页面预览效果2',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroTwoPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '启动页面预览效果6',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroSixPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '启动页面预览效果5',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroFivesPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '启动页面预览效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IntroFourPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '点击图像查看预览效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ImagePopupPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '照片点击放大和滚动显示头部导航',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/SliverAppbarPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '照片墙布局',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/GalleryPageOne');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '我的页面布局效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ProfileUser');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '购物页面布局效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/EcommerceFourPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '首页布局效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/EcommerceOnePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '图片裁剪效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CropPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '暗抽屉导航',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/DarkDrawerPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '亮抽屉式导航',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LightDrawerPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '底部导航动画效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FancyBottomBarPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '导航效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/MenuOnePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '导航隐藏效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/HiddenMenuPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '登录UI页面效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AuthThreePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '图片卡片放大动画效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/AnimationOnePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '简单的应用栏隐藏动画',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FancyAppbarAnimation');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '水波波纹动画效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/WaveDemoHomePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '很棒的底部弹出框',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/BottomSheetAwesome');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   'facebook脸书App首页实现',
                   textAlign: TextAlign.center,
                 ),

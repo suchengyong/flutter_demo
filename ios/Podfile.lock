@@ -14,6 +14,9 @@ PODS:
   - fluttertoast (0.0.2):
     - Flutter
     - Toast
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - image_picker (0.0.1):
     - Flutter
   - JCore (2.3.4)
@@ -24,8 +27,13 @@ PODS:
     - Flutter
   - path_provider (0.0.1):
     - Flutter
+  - share (0.0.1):
+    - Flutter
   - shared_preferences (0.0.1):
     - Flutter
+  - sqflite (0.0.1):
+    - Flutter
+    - FMDB (~> 2.7.2)
   - Toast (4.0.0)
   - tobias (0.0.1):
     - AlipaySDK-iOS (~> 15.7.9)
@@ -43,7 +51,9 @@ DEPENDENCIES:
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - multi_image_picker (from `.symlinks/plugins/multi_image_picker/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
   - tobias (from `.symlinks/plugins/tobias/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
   - video_player (from `.symlinks/plugins/video_player/ios`)
@@ -54,6 +64,7 @@ SPEC REPOS:
     - BSGridCollectionViewLayout
     - BSImagePicker
     - BSImageView
+    - FMDB
     - JCore
     - JPush
     - Toast
@@ -73,8 +84,12 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/multi_image_picker/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
   tobias:
     :path: ".symlinks/plugins/tobias/ios"
   url_launcher:
@@ -91,12 +106,15 @@ SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_jpush: bb278c661136b2a2032e96ffc15bbce871d3fb02
   fluttertoast: 6122fa75143e992b1d3470f61000f591a798cc58
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   JCore: 8aa29dc57ba3730dd9fe7544ce1a4e1cbe221135
   JPush: a401b946dcc76b37335422487201bc1ecc8dd296
   multi_image_picker: fd16be811b37ab030f72bf5c1c48b3a174254d13
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  share: 0b2c3e82132f5888bccca3351c504d0003b3b410
   shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  sqflite: 4001a31ff81d210346b500c55b17f4d6c7589dd0
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   tobias: 6872e2198dc30e17c10513b9ee114e28d099bc70
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef

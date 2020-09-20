@@ -106,9 +106,55 @@ import '../components/CanvasPage.dart';
 import '../components/AlipayTobiasPage.dart';
 import '../components/TiktokApp/pages/root_app.dart';
 import '../components/FacebookApp/pages/home_page.dart';
+import '../components/BottomSheetAwesome.dart';
+import '../components/WaveDemoHomePage.dart';
+import '../components/UI/animations/FancyAppbarAnimation.dart';
+import '../components/UI/animations/AnimationOnePage.dart';
+import '../components/UI/login/AuthThreePage.dart';
+import '../components/UI/navigation/MenuOnePage.dart';
+import '../components/UI/navigation/HiddenMenuPage.dart';
+import '../components/UI/navigation/LightDrawerPage.dart';
+import '../components/UI/navigation/DarkDrawerPage.dart';
+import '../components/UI/navigation/FancyBottomBarPage.dart';
+import '../components/UI/others/CropPage.dart';
+import '../components/UI/others/EcommerceOnePage.dart';
+import '../components/UI/others/EcommerceFourPage.dart';
+import '../components/UI/others/ProfileUser.dart';
+import '../components/UI/others/GalleryPageOne.dart';
+import '../components/UI/others/SliverAppbarPage.dart';
+import '../components/UI/others/ImagePopupPage.dart';
+import '../components/UI/onboarding/IntroFourPage.dart';
+import '../components/UI/onboarding/IntroFivesPage.dart';
+import '../components/UI/onboarding/IntroSixPage.dart';
+import '../components/UI/onboarding/IntroTwoPage.dart';
+import '../components/UI/onboarding/LandingOnePage.dart';
+import '../components/UI/onboarding/SmartWalletOnboardingPage.dart';
 
 //配置路由
 final routes = {
+  '/SmartWalletOnboardingPage': (context) => SmartWalletOnboardingPage(),
+  '/LandingOnePage': (context) => LandingOnePage(),
+  '/IntroTwoPage': (context) => IntroTwoPage(),
+  '/IntroSixPage': (context) => IntroSixPage(),
+  '/IntroFivesPage': (context) => IntroFivesPage(),
+  '/IntroFourPage': (context) => IntroFourPage(),
+  '/ImagePopupPage': (context) => ImagePopupPage(),
+  '/SliverAppbarPage': (context) => SliverAppbarPage(),
+  '/GalleryPageOne': (context) => GalleryPageOne(),
+  '/ProfileUser': (context) => ProfileUser(),
+  '/EcommerceFourPage': (context) => EcommerceFourPage(),
+  '/EcommerceOnePage': (context) => EcommerceOnePage(),
+  '/CropPage': (context) => CropPage(),
+  '/FancyBottomBarPage': (context) => FancyBottomBarPage(),
+  '/DarkDrawerPage': (context) => DarkDrawerPage(),
+  '/LightDrawerPage': (context) => LightDrawerPage(),
+  '/HiddenMenuPage': (context) => HiddenMenuPage(),
+  '/MenuOnePage': (context) => MenuOnePage(),
+  '/AuthThreePage': (context) => AuthThreePage(),
+  '/AnimationOnePage': (context) => AnimationOnePage(),
+  '/FancyAppbarAnimation': (context) => FancyAppbarAnimation(),
+  '/WaveDemoHomePage': (context) => WaveDemoHomePage(),
+  '/BottomSheetAwesome': (context) => BottomSheetAwesome(),
   '/FaceBookAppPage': (context) => FaceBookAppPage(),
   '/RootApp': (context) => RootApp(),
   '/AlipayTobiasPage': (context) => AlipayTobiasPage(),
