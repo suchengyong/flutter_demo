@@ -22,6 +22,17 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '音乐播放器实现效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/IndexPlayerList');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '启动页面预览效果8',
                   textAlign: TextAlign.center,
                 ),

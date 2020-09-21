@@ -129,9 +129,11 @@ import '../components/UI/onboarding/IntroSixPage.dart';
 import '../components/UI/onboarding/IntroTwoPage.dart';
 import '../components/UI/onboarding/LandingOnePage.dart';
 import '../components/UI/onboarding/SmartWalletOnboardingPage.dart';
+import '../components/audioplayers/IndexPlayerList.dart';
 
 //配置路由
 final routes = {
+  '/IndexPlayerList': (context) => IndexPlayerList(),
   '/SmartWalletOnboardingPage': (context) => SmartWalletOnboardingPage(),
   '/LandingOnePage': (context) => LandingOnePage(),
   '/IntroTwoPage': (context) => IntroTwoPage(),

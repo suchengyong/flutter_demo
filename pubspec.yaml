@@ -72,6 +72,7 @@ dependencies:
   crop: ^0.1.2 # 头像上传功能，实现照片选择及裁剪
   share: ^0.6.4+3 # 分享功能
   animator: ^2.0.1 # 制作动画
+  audioplayers: ^0.15.1 # 音乐播放器
   font_awesome_flutter: ^8.8.1 # 
 
 # 开发包
@@ -89,6 +90,7 @@ flutter:
     - assets/hotel/
     - assets/flare/
     - assets/nicasiaassets/
+    - assets/mp3/
     
   # 自定义字体
   fonts:
