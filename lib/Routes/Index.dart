@@ -124,6 +124,7 @@ import '../components/UI/others/GalleryPageOne.dart';
 import '../components/UI/others/SliverAppbarPage.dart';
 import '../components/UI/others/ImagePopupPage.dart';
 import '../components/UI/onboarding/IntroFourPage.dart';
+import '../components/UI/onboarding/InitOnePage.dart';
 import '../components/UI/onboarding/IntroFivesPage.dart';
 import '../components/UI/onboarding/IntroSixPage.dart';
 import '../components/UI/onboarding/IntroTwoPage.dart';
@@ -138,6 +139,7 @@ final routes = {
   '/LandingOnePage': (context) => LandingOnePage(),
   '/IntroTwoPage': (context) => IntroTwoPage(),
   '/IntroSixPage': (context) => IntroSixPage(),
+  '/InitOnePage': (context) => InitOnePage(),
   '/IntroFivesPage': (context) => IntroFivesPage(),
   '/IntroFourPage': (context) => IntroFourPage(),
   '/ImagePopupPage': (context) => ImagePopupPage(),

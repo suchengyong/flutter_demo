@@ -88,6 +88,17 @@ class _HomePageState extends State<HomePage> {
               ),
               RaisedButton(
                 child: Text(
+                  '启动页面预览效果1',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/InitOnePage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '启动页面预览效果',
                   textAlign: TextAlign.center,
                 ),
