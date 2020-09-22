@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'CustomerLoadingDialog.dart';
 import 'Dailog/CustomDialog.dart';
 import 'Dailog/Loading.dart';
 import 'Dailog/ShowAlertDialog.dart';
@@ -16,6 +17,7 @@ class DialogPage extends StatefulWidget {
 }
 
 class _DialogPageState extends State<DialogPage> {
+  GlobalKey globalKey = GlobalKey();
   void printSelectValue(String val) {
     print(val);
   }
@@ -144,6 +146,16 @@ class _DialogPageState extends State<DialogPage> {
       context: context,
       builder: (context) {
         return LoadingDialog(text: '加载中...');
+      },
+    );
+  }
+
+  // 自定义loading框加载动画
+  _loadingshowDialog() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return CustomerLoadingDialog(text: '正在加载中...');
       },
     );
   }
@@ -307,6 +319,10 @@ class _DialogPageState extends State<DialogPage> {
             RaisedButton(child: Text('自定义Dialog弹出框'), onPressed: _customDialog),
             RaisedButton(
                 child: Text('自定义Loading弹出框'), onPressed: _customLoading),
+            RaisedButton(
+              child: Text('自定义Loading弹出框加载动画'),
+              onPressed: _loadingshowDialog,
+            ),
             RaisedButton(
                 child: Text('自定义底部弹出框'), onPressed: _bottomSheetDialog),
             RaisedButton(

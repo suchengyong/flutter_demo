@@ -131,9 +131,13 @@ import '../components/UI/onboarding/IntroTwoPage.dart';
 import '../components/UI/onboarding/LandingOnePage.dart';
 import '../components/UI/onboarding/SmartWalletOnboardingPage.dart';
 import '../components/audioplayers/IndexPlayerList.dart';
+import '../components/UI/onboarding/SpeakAnim.dart';
+import '../components/Calculator/CalculatorPage.dart';
 
 //配置路由
 final routes = {
+  '/CalculatorPage': (context) => CalculatorPage(),
+  '/SpeakAnim': (context) => SpeakAnim(),
   '/IndexPlayerList': (context) => IndexPlayerList(),
   '/SmartWalletOnboardingPage': (context) => SmartWalletOnboardingPage(),
   '/LandingOnePage': (context) => LandingOnePage(),
