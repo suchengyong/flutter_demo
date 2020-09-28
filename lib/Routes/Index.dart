@@ -133,9 +133,11 @@ import '../components/UI/onboarding/SmartWalletOnboardingPage.dart';
 import '../components/audioplayers/IndexPlayerList.dart';
 import '../components/UI/onboarding/SpeakAnim.dart';
 import '../components/Calculator/CalculatorPage.dart';
+import '../components/JsonChangeDataPage.dart';
 
 //配置路由
 final routes = {
+  '/JsonChangeDataPage': (context) => JsonChangeDataPage(),
   '/CalculatorPage': (context) => CalculatorPage(),
   '/SpeakAnim': (context) => SpeakAnim(),
   '/IndexPlayerList': (context) => IndexPlayerList(),

@@ -22,6 +22,17 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '请求接口返回结果json数据实现',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/JsonChangeDataPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '计算器实现效果',
                   textAlign: TextAlign.center,
                 ),
