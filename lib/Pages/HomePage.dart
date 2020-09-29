@@ -11,7 +11,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('消首页各种特效页面'),
+        title: Text('首页各种特效页面'),
         elevation: 0.0, //阴影大小
       ),
       body: ListView(
@@ -20,6 +20,17 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              RaisedButton(
+                child: Text(
+                  '轻量提示--长按下弹出提示--效果实现',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/TooltipPage');
+                },
+              ),
               RaisedButton(
                 child: Text(
                   '贝赛尔二次曲线裁切波浪形形状',

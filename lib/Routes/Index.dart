@@ -137,9 +137,11 @@ import '../components/JsonChangeDataPage.dart';
 import '../components/FrostedGlassPage.dart';
 import '../components/CurveTwoCuttingPage.dart';
 import '../components/CurveWaveCuttingPage.dart';
+import '../components/TooltipPage.dart';
 
 //配置路由
 final routes = {
+  '/TooltipPage': (context) => TooltipPage(),
   '/CurveWaveCuttingPage': (context) => CurveWaveCuttingPage(),
   '/CurveTwoCuttingPage': (context) => CurveTwoCuttingPage(),
   '/FrostedGlassPage': (context) => FrostedGlassPage(),
