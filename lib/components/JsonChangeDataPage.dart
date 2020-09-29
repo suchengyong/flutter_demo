@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import '../model/ModelData.dart';
 import 'package:http/http.dart' as http;
-
-import 'Dailog/Loading.dart';
 
 class JsonChangeDataPage extends StatefulWidget {
   JsonChangeDataPage({Key key}) : super(key: key);
@@ -31,7 +30,6 @@ class _JsonChangeDataPageState extends State<JsonChangeDataPage> {
   }
 
   Future<List<ModelData>> fetchPosts(context) async {
-    _customLoading(false);
     final response =
         await http.get('https://resources.ninghao.net/demo/posts.json');
     // print('请求状态：${response.statusCode}');
@@ -41,27 +39,10 @@ class _JsonChangeDataPageState extends State<JsonChangeDataPage> {
       List<ModelData> modeldata = responseBody['posts']
           .map<ModelData>((item) => ModelData.fromJson(item))
           .toList();
-      // 关闭加载动画
-      _customLoading(true);
       return modeldata;
     } else {
-      // 关闭加载动画
-      Navigator.pop(context);
       throw Exception('数据请求错误');
     }
-  }
-
-  //自定义loading框
-  _customLoading(falge) {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return LoadingDialog(
-          text: '加载中...',
-          close: falge,
-        );
-      },
-    );
   }
 
   @override
@@ -79,9 +60,7 @@ class _JsonChangeDataPageState extends State<JsonChangeDataPage> {
           print('状态：${snapshot.connectionState}');
           print('数据：${snapshot.data}');
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(
-              child: Text('数据加载中...'), //'数据加载中...'
-            );
+            return LoadingData();
           }
           // 如果有数据
           if (snapshot.hasData) {
@@ -107,28 +86,43 @@ class _JsonChangeDataPageState extends State<JsonChangeDataPage> {
   }
 }
 
-// 写一个构造类
-class ModelData {
-  final int id;
-  final String title;
-  final String author;
-  final String description;
-  final String imageUrl;
+class LoadingData extends StatelessWidget {
+  const LoadingData({Key key}) : super(key: key);
 
-  ModelData(this.id, this.title, this.author, this.description, this.imageUrl);
-
-  ModelData.fromJson(Map json)
-      : id = json['id'],
-        title = json['title'],
-        author = json['author'],
-        description = json['description'],
-        imageUrl = json['imageUrl'];
-
-  Map toJson() => {
-        'title': title,
-        'description': description,
-        'imageUrl': imageUrl,
-        'author': author,
-        'id': id,
-      };
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: double.infinity,
+        decoration: ShapeDecoration(
+          color: Color(0xffffffff),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(8.0),
+            ),
+          ),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            CircularProgressIndicator(
+              strokeWidth: 2,
+              valueColor:
+                  AlwaysStoppedAnimation<Color>(Theme.of(context).primaryColor),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 20.0,
+              ),
+              child: Text(
+                '数据加载中...',
+                style: TextStyle(fontSize: 14.0),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

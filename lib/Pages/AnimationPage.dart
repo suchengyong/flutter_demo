@@ -6,6 +6,7 @@ import 'package:flutter_demo/Pages/animation/photo_hero.dart';
 import 'package:flutter_demo/Pages/animation/spinkit_page.dart';
 
 import 'animation/LoginBackgroundAnimationPage.dart';
+import 'animation/RouterAnimationPage.dart';
 import 'animation/animation_demo.dart';
 import 'animation/animation_heart_demo.dart';
 
@@ -131,6 +132,19 @@ class _AnimationPageState extends State<AnimationPage> {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => SpinkitPage()),
+              );
+            },
+          ),
+          RaisedButton(
+            child: Text(
+              '路由跳转动画效果实现',
+              textAlign: TextAlign.center,
+            ),
+            color: Theme.of(context).accentColor, //使用主题颜色
+            textTheme: ButtonTextTheme.primary, //
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => RouterAnimationPage()),
               );
             },
           ),

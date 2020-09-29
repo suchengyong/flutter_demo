@@ -4,11 +4,10 @@ import 'dart:async';
 // ignore: must_be_immutable
 class LoadingDialog extends Dialog {
   String text;
-  bool close = false;
-  LoadingDialog({Key key, @required this.text, this.close}) : super(key: key);
+  LoadingDialog({Key key, @required this.text}) : super(key: key);
   //使用定时器 关闭弹出框 ,使用定时器自动关闭
   _closeDialog(context) {
-    Timer.periodic(Duration(milliseconds: 1000), (t) {
+    Timer.periodic(Duration(milliseconds: 5000), (t) {
       t.cancel(); //取消定时器
       Navigator.pop(context); //关闭弹出框
     });
@@ -17,9 +16,7 @@ class LoadingDialog extends Dialog {
 
   @override
   Widget build(BuildContext context) {
-    if (close) {
-      _closeDialog(context);
-    }
+    _closeDialog(context);
     return new Material(
       //创建透明层
       type: MaterialType.transparency, //透明类型
