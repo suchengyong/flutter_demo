@@ -134,9 +134,15 @@ import '../components/audioplayers/IndexPlayerList.dart';
 import '../components/UI/onboarding/SpeakAnim.dart';
 import '../components/Calculator/CalculatorPage.dart';
 import '../components/JsonChangeDataPage.dart';
+import '../components/FrostedGlassPage.dart';
+import '../components/CurveTwoCuttingPage.dart';
+import '../components/CurveWaveCuttingPage.dart';
 
 //配置路由
 final routes = {
+  '/CurveWaveCuttingPage': (context) => CurveWaveCuttingPage(),
+  '/CurveTwoCuttingPage': (context) => CurveTwoCuttingPage(),
+  '/FrostedGlassPage': (context) => FrostedGlassPage(),
   '/JsonChangeDataPage': (context) => JsonChangeDataPage(),
   '/CalculatorPage': (context) => CalculatorPage(),
   '/SpeakAnim': (context) => SpeakAnim(),

@@ -22,6 +22,39 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '贝赛尔二次曲线裁切波浪形形状',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CurveWaveCuttingPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '贝赛尔二次曲线裁切弧形形状',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CurveTwoCuttingPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '背景图片模糊处理效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FrostedGlassPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '请求接口返回结果json数据实现',
                   textAlign: TextAlign.center,
                 ),
