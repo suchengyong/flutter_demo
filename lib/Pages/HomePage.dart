@@ -22,6 +22,28 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '简单的聊天页面布局效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ChatPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '绘制一个三角形效果',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/ChatBoxPainter');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '使用smart_flare完成侧边栏菜单交互动画',
                   textAlign: TextAlign.center,
                 ),

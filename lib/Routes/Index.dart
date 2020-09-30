@@ -141,9 +141,13 @@ import '../components/TooltipPage.dart';
 import '../components/CreditCardPage.dart';
 import '../components/FlareButtonPage.dart';
 import '../components/FlareSidebarMenuPage.dart';
+import '../components/ChatBoxPainter.dart';
+import '../components/ChatPage.dart';
 
 //配置路由
 final routes = {
+  '/ChatPage': (context) => ChatPage(),
+  '/ChatBoxPainter': (context) => ChatBoxPainter(),
   '/FlareSidebarMenuPage': (context) => FlareSidebarMenuPage(),
   '/FlareButtonPage': (context) => FlareButtonPage(),
   '/CreditCardPage': (context) => CreditCardPage(),
