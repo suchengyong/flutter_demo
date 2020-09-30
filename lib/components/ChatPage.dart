@@ -283,7 +283,7 @@ class _ChatBottomRowState extends State<ChatBottomRow> {
                   RaisedButton(
                     color: Colors.green[300],
                     child: Text(
-                      "提交",
+                      "发送",
                       style: TextStyle(color: Colors.white),
                     ),
                     onPressed: () {
