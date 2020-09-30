@@ -138,9 +138,15 @@ import '../components/FrostedGlassPage.dart';
 import '../components/CurveTwoCuttingPage.dart';
 import '../components/CurveWaveCuttingPage.dart';
 import '../components/TooltipPage.dart';
+import '../components/CreditCardPage.dart';
+import '../components/FlareButtonPage.dart';
+import '../components/FlareSidebarMenuPage.dart';
 
 //配置路由
 final routes = {
+  '/FlareSidebarMenuPage': (context) => FlareSidebarMenuPage(),
+  '/FlareButtonPage': (context) => FlareButtonPage(),
+  '/CreditCardPage': (context) => CreditCardPage(),
   '/TooltipPage': (context) => TooltipPage(),
   '/CurveWaveCuttingPage': (context) => CurveWaveCuttingPage(),
   '/CurveTwoCuttingPage': (context) => CurveTwoCuttingPage(),

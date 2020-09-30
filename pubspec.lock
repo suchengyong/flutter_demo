@@ -196,7 +196,7 @@ packages:
       name: flare_flutter
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.8.3"
+    version: "2.0.6"
   flip_card:
     dependency: "direct main"
     description:
@@ -670,6 +670,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.2"
+  smart_flare:
+    dependency: "direct main"
+    description:
+      name: smart_flare
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.2.9+1"
   source_span:
     dependency: transitive
     description:

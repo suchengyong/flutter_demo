@@ -22,6 +22,39 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '使用smart_flare完成侧边栏菜单交互动画',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlareSidebarMenuPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '使用smart_flare完成Button交互动画',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FlareButtonPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  '卡片动画效果实现',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CreditCardPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '轻量提示--长按下弹出提示--效果实现',
                   textAlign: TextAlign.center,
                 ),

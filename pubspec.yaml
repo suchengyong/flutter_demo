@@ -67,14 +67,16 @@ dependencies:
   wave: ^0.1.0 # 绘制水波纹特效 https://github.com/i-protoss/wave
   bottomreveal: ^1.0.0 # 底部导航栏
   animated_floatactionbuttons: ^0.1.0 # 浮动按钮
-  flare_flutter: ^1.8.3 # 使用Flare做动画
   flutter_staggered_grid_view: ^0.3.0 # 实现分页瀑布流效果
   crop: ^0.1.2 # 头像上传功能，实现照片选择及裁剪
   share: ^0.6.4+3 # 分享功能
   animator: ^2.0.1 # 制作动画
   audioplayers: ^0.15.1 # 音乐播放器
   font_awesome_flutter: ^8.8.1 # 
+  flare_flutter: ^2.0.4  # 使用Flare做动画
+  smart_flare: any  # 对 flare API进行封装的插件，使用少量的代码即可实现交互动画
 
+  
 # 开发包
 dev_dependencies:
   flutter_test:
@@ -91,6 +93,9 @@ flutter:
     - assets/flare/
     - assets/nicasiaassets/
     - assets/mp3/
+    - assets/gif/
+    - assets/button-animation.flr
+    - assets/slideout-menu.flr
     
   # 自定义字体
   fonts:
@@ -114,6 +119,9 @@ flutter:
     - family: MyFlutterApp
       fonts:
         - asset: assets/fonts/MyFlutterApp.ttf
+    - family: Pangmen
+      fonts:
+        - asset: assets/fonts/pangmen.ttf
         
     # 下面是自定义阿里图标
     - family: Iconfont
