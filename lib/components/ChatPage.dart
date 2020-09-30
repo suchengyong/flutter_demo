@@ -2,7 +2,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatelessWidget {
-  const ChatPage({Key key}) : super(key: key);
+  ChatPage({Key key}) : super(key: key);
+
+  callback(value) {
+    print(value);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +18,7 @@ class ChatPage extends StatelessWidget {
         ],
       ),
       body: ChatDetailList(),
+      bottomNavigationBar: ChatBottomRow(),
     );
   }
 }
@@ -39,13 +44,13 @@ class ChatDetailList extends StatelessWidget {
       avatarUrl: avatarUrl1,
       sender: 1,
       chatType: 1,
-      content: '豪华房豪华房发挥好发挥好',
+      content: '豪华房豪华房发挥好发房豪华房发挥好发房豪华房发挥好发挥好',
     ));
     records.add(ChatRecord(
       avatarUrl: avatarUrl0,
       sender: 0,
       chatType: 1,
-      content: '我还在这等你呢',
+      content: '我还在这等你呢我还在这等你呢我还在这等你呢我还在这等你呢',
     ));
     records.add(ChatRecord(
       avatarUrl: avatarUrl1,
@@ -121,8 +126,17 @@ class ChatRow extends StatelessWidget {
               : Container(),
           // 文字展示内容区
           Container(
-            width: 300 * rpx,
-            child: Text(content),
+            constraints: BoxConstraints(
+              maxWidth: 500 * rpx,
+            ),
+            child: Text(
+              content,
+              style: TextStyle(
+                fontSize: 30 * rpx,
+                letterSpacing: 1.2 * rpx,
+                height: 1.5,
+              ),
+            ),
             margin: EdgeInsets.symmetric(horizontal: 20 * rpx),
             padding: EdgeInsets.all(15 * rpx),
             decoration: BoxDecoration(
@@ -199,4 +213,119 @@ class ChatRecord {
   String avatarUrl;
   int chatType;
   ChatRecord({this.sender, this.avatarUrl, this.content, this.chatType});
+}
+
+//底部输入框
+class ChatBottomRow extends StatefulWidget {
+  ChatBottomRow({Key key}) : super(key: key);
+  @override
+  _ChatBottomRowState createState() => _ChatBottomRowState();
+}
+
+class _ChatBottomRowState extends State<ChatBottomRow> {
+  var _userText = new TextEditingController(); //初始化给表单赋值
+  @override
+  void initState() {
+    super.initState();
+    _userText.text = '';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.grey[100],
+      child: SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              color: Colors.grey[100],
+              width: MediaQuery.of(context).size.width,
+              height: 40,
+              child: Row(
+                children: <Widget>[
+                  OutlinedIconButton(
+                    icon: Icon(Icons.keyboard),
+                    onTap: () {},
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    child: Container(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          width: 1,
+                          color: Colors.grey[300],
+                        ),
+                      ),
+                      alignment: Alignment.center,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                        maxLines: 1,
+                        autocorrect: false,
+                        controller: _userText,
+                        onChanged: (value) {
+                          _userText.text = value;
+                        },
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  RaisedButton(
+                    color: Colors.green[300],
+                    child: Text(
+                      "提交",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: () {
+                      print(_userText.text);
+                    },
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+//
+class OutlinedIconButton extends StatelessWidget {
+  const OutlinedIconButton({Key key, @required this.icon, @required this.onTap})
+      : super(key: key);
+  final Icon icon;
+  final VoidCallback onTap;
+  @override
+  Widget build(BuildContext context) {
+    double rpx = MediaQuery.of(context).size.width / 750;
+    return Container(
+      width: 60 * rpx,
+      margin: EdgeInsets.all(10 * rpx),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(width: 4 * rpx),
+      ),
+      child: IconButton(
+        splashColor: Colors.transparent,
+        icon: icon,
+        iconSize: 40 * rpx,
+        padding: EdgeInsets.all(0),
+        onPressed: onTap,
+      ),
+    );
+  }
 }
