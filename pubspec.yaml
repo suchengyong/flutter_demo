@@ -96,6 +96,7 @@ flutter:
     - assets/gif/
     - assets/button-animation.flr
     - assets/slideout-menu.flr
+    - lib/Pulgs/province.json
     
   # 自定义字体
   fonts:

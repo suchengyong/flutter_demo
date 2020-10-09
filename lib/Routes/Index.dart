@@ -143,9 +143,11 @@ import '../components/FlareButtonPage.dart';
 import '../components/FlareSidebarMenuPage.dart';
 import '../components/ChatBoxPainter.dart';
 import '../components/ChatPage.dart';
+import '../components/CityPickerPage.dart';
 
 //配置路由
 final routes = {
+  '/CityPickerPage': (context) => CityPickerPage(),
   '/ChatPage': (context) => ChatPage(),
   '/ChatBoxPainter': (context) => ChatBoxPainter(),
   '/FlareSidebarMenuPage': (context) => FlareSidebarMenuPage(),

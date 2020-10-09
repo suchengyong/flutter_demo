@@ -22,6 +22,17 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               RaisedButton(
                 child: Text(
+                  '城市地区picker选择',
+                  textAlign: TextAlign.center,
+                ),
+                color: Theme.of(context).accentColor, //使用主题颜色
+                textTheme: ButtonTextTheme.primary, //
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CityPickerPage');
+                },
+              ),
+              RaisedButton(
+                child: Text(
                   '简单的聊天页面布局效果',
                   textAlign: TextAlign.center,
                 ),
